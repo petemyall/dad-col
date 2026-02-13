@@ -1,0 +1,203 @@
+body {
+    font-family: "Georgia", serif;
+    background: #7796ed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 30px 10px 20px;
+    border-bottom: 1px solid #d6d3cc;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 8px 0 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    padding-bottom: 6px;
+    color: #444;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.home-link {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 0.2em 0.9em;
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #6ecfff, #022db0);
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.poem {
+    background: #fff;
+    padding: 20px;
+    border-left: 4px solid #b8b4ac;
+    font-style: italic;
+    white-space: pre-line;
+}
+
+.italic {
+    font-style: italic;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top: 1px solid #d6d3cc;
+    color: #555;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* space between images and text */
+}
+
+.footer-photo {
+    width: 80px;        /* adjust size as needed */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px; /* soft corners */
+    border: 2px solid #ccc;
+    transition: transform 0.2s ease;
+}
+
+.footer-photo:hover {
+    transform: scale(1.05);
+}
+
+.footer-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Fullscreen intro image that fades out */
+.intro-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeOut 4s ease-in-out forwards;
+    animation-delay: 1s; /* how long the image stays fully visible */
+}
+
+.intro-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    opacity: 1;
+}
+
+/* Fade-out animation */
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
+}
+
+/* Prevent content from jumping during fade */
+body {
+    overflow-x: hidden;
+}
+/* Navigation */
+nav {
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 1px solid #d6d3cc;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+/* Intro fade image */
+.intro-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeOut 4s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+.intro-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
+}
+
+/* Media button */
+.media-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #4a4a4a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.media-button:hover {
+    background: #2f2f2f;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maybe It’s Because I’m A Londoner – Audio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Page-specific styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .audio-background {
+    background-image: url('media/london.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;        /* instead of height: 100% */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+        .audio-box {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    margin-top: 60vh;   /* controls vertical position cleanly */
+}
+
+        .audio-box h1 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: #333;
+        }
+
+        .back-link {
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="audio-background">
+
+    <div class="audio-box">
+        <h1>Maybe It’s Because I’m A Londoner</h1>
+
+        <audio controls>
+            <source src="media/maybeitsbecause.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <br>
+        <a class="back-link" href="index.html">← Back to Order of Service</a>
+    </div>
+
+</div>
+
+</body>
+</html>
