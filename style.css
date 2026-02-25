@@ -201,3 +201,11 @@ nav a.active {
 .media-button:hover {
     background: #2f2f2f;
 }
+
+/* Disable intro fade when returning from another page */
+body.no-fade .intro-image {
+    animation: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    display: none !important;
+}

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   
+
     <meta charset="UTF-8">
     <title>In Loving Memory of Frederick Patrick Myall</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,8 +36,8 @@
     <h2>Personal Thoughts from Pete & Jeanette</h2>
     <a class="media-button" href="petes-words.html">
     Read Pete's Words Here</a> 
-    <a class="media-button" href="petes-words.html">
-    Read Pete's Words Here</a>
+    <a class="media-button" href="jeanettes-words.html">
+    Read Jeanette's's Words Here</a>
 
     <h2>Poem — “Remember Me”</h2><p class="italic">by Margaret Mead</p>
     <a class="media-button" href="rememberme.html">
@@ -87,6 +89,14 @@
 
     </div>
 </footer>
+ <script>
+    // Check if ?nofade=true is in the URL
+    const noFade = new URLSearchParams(window.location.search).get('nofade');
+
+    if (noFade) {
+        document.body.classList.add('no-fade');
+    }
+</script>
 
 </body>
 </html>
